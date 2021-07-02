@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AllScenarioRun</td>
+            <td>02 Jul 2021, 16:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.clickOnSyllabus()</td>
+              <td>1</td>
+              <td class="duration" data-value="80730200">0.080</td>
+              <td class="duration" data-value="80730200">0.080</td>
+              <td class="duration" data-value="80730200">0.080</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.click_Login()</td>
+              <td>1</td>
+              <td class="duration" data-value="632494100">0.632</td>
+              <td class="duration" data-value="632494100">0.632</td>
+              <td class="duration" data-value="632494100">0.632</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.click_Logout()</td>
+              <td>2</td>
+              <td class="duration" data-value="308304850">0.308</td>
+              <td class="duration" data-value="308304850">0.308</td>
+              <td class="duration" data-value="616609700">0.616</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.enter_details_fname_and_lname_and_address_and_cc_and_cvv_for_booking_Confimration_and_Book(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="738631700">0.738</td>
+              <td class="duration" data-value="738631700">0.738</td>
+              <td class="duration" data-value="738631700">0.738</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.launchToTheNykaaSite()</td>
+              <td>2</td>
+              <td class="duration" data-value="668310900">0.668</td>
+              <td class="duration" data-value="668310900">0.781</td>
+              <td class="duration" data-value="1336621800">1.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.launchToTheSundariihandmadeSite()</td>
+              <td>1</td>
+              <td class="duration" data-value="3459267800">3.459</td>
+              <td class="duration" data-value="3459267800">3.459</td>
+              <td class="duration" data-value="3459267800">3.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.launch_Adactin_Browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="1657445300">1.657</td>
+              <td class="duration" data-value="1657445300">1.657</td>
+              <td class="duration" data-value="1657445300">1.657</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.launch_the_Amazon_App()</td>
+              <td>2</td>
+              <td class="duration" data-value="1728513100">1.728</td>
+              <td class="duration" data-value="1728513100">1.749</td>
+              <td class="duration" data-value="3457026200">3.457</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.login_into_the_Gamil_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="1499311400">1.499</td>
+              <td class="duration" data-value="1499311400">1.499</td>
+              <td class="duration" data-value="1499311400">1.499</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.onSelectingCoursesNavigatesToJavaTraining()</td>
+              <td>1</td>
+              <td class="duration" data-value="1248100">0.001</td>
+              <td class="duration" data-value="1248100">0.001</td>
+              <td class="duration" data-value="1248100">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.onSelectingCoursesNavigatesToSoftwareTestingTraining()</td>
+              <td>1</td>
+              <td class="duration" data-value="1674800">0.001</td>
+              <td class="duration" data-value="1674800">0.001</td>
+              <td class="duration" data-value="1674800">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.print_the_Order_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="5586333700">5.586</td>
+              <td class="duration" data-value="5586333700">5.586</td>
+              <td class="duration" data-value="5586333700">5.586</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.search_for_the_Apple_Watch_and_give_a_Search()</td>
+              <td>2</td>
+              <td class="duration" data-value="1865275300">1.865</td>
+              <td class="duration" data-value="1865275300">1.894</td>
+              <td class="duration" data-value="3730550600">3.730</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.search_the_required_hotel_location_and_room_and_inDate_and_outDate_and_adult_along_with_the_Dates_and_click_Search(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="853579400">0.853</td>
+              <td class="duration" data-value="853579400">0.853</td>
+              <td class="duration" data-value="853579400">0.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.select_the_Required_Hotel_and_Continue()</td>
+              <td>1</td>
+              <td class="duration" data-value="540207600">0.540</td>
+              <td class="duration" data-value="540207600">0.540</td>
+              <td class="duration" data-value="540207600">0.540</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.theUserClickOnCareers()</td>
+              <td>1</td>
+              <td class="duration" data-value="1988673400">1.988</td>
+              <td class="duration" data-value="1988673400">1.988</td>
+              <td class="duration" data-value="1988673400">1.988</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.theUserClickOnContactUs()</td>
+              <td>1</td>
+              <td class="duration" data-value="4176475400">4.176</td>
+              <td class="duration" data-value="4176475400">4.176</td>
+              <td class="duration" data-value="4176475400">4.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.theUserClicksCottonBlouses(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1877900">0.001</td>
+              <td class="duration" data-value="1877900">0.001</td>
+              <td class="duration" data-value="1877900">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.theUserNavigatesToShopByCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="2172800">0.002</td>
+              <td class="duration" data-value="2172800">0.002</td>
+              <td class="duration" data-value="2172800">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.theUserSelectsCourses()</td>
+              <td>2</td>
+              <td class="duration" data-value="5915500">0.005</td>
+              <td class="duration" data-value="5915500">0.008</td>
+              <td class="duration" data-value="11831000">0.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.the_user_clicks_Login()</td>
+              <td>1</td>
+              <td class="duration" data-value="476400">0.000</td>
+              <td class="duration" data-value="476400">0.000</td>
+              <td class="duration" data-value="476400">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.the_user_clicks_booked_Itenary()</td>
+              <td>1</td>
+              <td class="duration" data-value="481732300">0.481</td>
+              <td class="duration" data-value="481732300">0.481</td>
+              <td class="duration" data-value="481732300">0.481</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.the_user_enter_the_credntials_username_and_password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="266878300">0.266</td>
+              <td class="duration" data-value="266878300">0.266</td>
+              <td class="duration" data-value="266878300">0.266</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.the_user_enters_UserID_and_Password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="3195100">0.003</td>
+              <td class="duration" data-value="3195100">0.003</td>
+              <td class="duration" data-value="3195100">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.the_user_must_click_on_Apple_Watch(Integer)</td>
+              <td>2</td>
+              <td class="duration" data-value="1716750">0.001</td>
+              <td class="duration" data-value="1716750">0.001</td>
+              <td class="duration" data-value="3433500">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.to_verify_if_the_user_has_entered_the_right_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="436700">0.000</td>
+              <td class="duration" data-value="436700">0.000</td>
+              <td class="duration" data-value="436700">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.userClicksOnAParticularBrand(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="202092800">0.202</td>
+              <td class="duration" data-value="202092800">0.376</td>
+              <td class="duration" data-value="404185600">0.404</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.userIsInGreenTechnologyPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="525113000">0.525</td>
+              <td class="duration" data-value="525113000">0.569</td>
+              <td class="duration" data-value="2100452000">2.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.userNavigatesToBrands()</td>
+              <td>2</td>
+              <td class="duration" data-value="2903550">0.002</td>
+              <td class="duration" data-value="2903550">0.004</td>
+              <td class="duration" data-value="5807100">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.userSelectsJEETraining(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="1094800">0.001</td>
+              <td class="duration" data-value="1094800">0.001</td>
+              <td class="duration" data-value="1094800">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.userSelectsLoadRunnerTraining()</td>
+              <td>1</td>
+              <td class="duration" data-value="1749300">0.001</td>
+              <td class="duration" data-value="1749300">0.001</td>
+              <td class="duration" data-value="1749300">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.user_enter_the_username_and_password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="804082200">0.804</td>
+              <td class="duration" data-value="804082200">0.804</td>
+              <td class="duration" data-value="804082200">0.804</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.user_launch_the_Adacting_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="4472033600">4.472</td>
+              <td class="duration" data-value="4472033600">4.472</td>
+              <td class="duration" data-value="4472033600">4.472</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">AdactinusingBaseClass.verify_the_entered_details_are_correct()</td>
+              <td>1</td>
+              <td class="duration" data-value="5783900">0.005</td>
+              <td class="duration" data-value="5783900">0.005</td>
+              <td class="duration" data-value="5783900">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.closebow(Scenario)</td>
+              <td>12</td>
+              <td class="duration" data-value="1306761241">1.306</td>
+              <td class="duration" data-value="1306761241">1.861</td>
+              <td class="duration" data-value="15681134900">15.681</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.launcher()</td>
+              <td>12</td>
+              <td class="duration" data-value="1418524725">1.418</td>
+              <td class="duration" data-value="1418524725">2.489</td>
+              <td class="duration" data-value="17022296700">17.022</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>36</td>
+            <td>69</td>
+            <td class="duration">1.038</td>
+            <td class="duration">17.022</td>
+            <td class="duration">1:11.627</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

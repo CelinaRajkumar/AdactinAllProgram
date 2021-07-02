@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.357965">
+    <testcase classname="Book a Ticket using Adacting Page" name="User need to book a Hotel ticket in the Adacting Page" time="23.904546">
+        <system-out><![CDATA[Given Launch Adactin Browser................................................passed
+When The user enter the credntials username and password....................passed
+And click Login.............................................................passed
+Then Verify the entered details are correct.................................passed
+When Search the required hotel location and room and inDate and outDate and adult along with the Dates and click Search.passed
+And Select the Required Hotel and Continue..................................passed
+And Enter details fname and lname and address and cc and cvv for booking Confimration and Book.passed
+And Print the Order number..................................................passed
+And Click Logout............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Book a Ticket using Adacting Page" name="User needs to check the iternary" time="6.453419">
+        <system-out><![CDATA[Given User launch the Adacting browser......................................passed
+When User enter the username and password...................................passed
+When the user clicks booked Itenary.........................................passed
+And Click Logout............................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,383 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User need to be in the Aadactin Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-06-28T17:48:18.669Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10305627400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launcher()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "User need to book a Hotel ticket in the Adacting Page",
+        "description": "",
+        "id": "book-a-ticket-using-adacting-page;user-need-to-book-a-hotel-ticket-in-the-adacting-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1296383300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebow(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2154802200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Launch Adactin Browser",
+            "match": {
+              "location": "AdactinusingBaseClass.launch_Adactin_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 423840100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enter the credntials username and password",
+            "match": {
+              "location": "AdactinusingBaseClass.the_user_enter_the_credntials_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "DiyaReneesh",
+                  "Diya@2015"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 686404800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click Login",
+            "match": {
+              "location": "AdactinusingBaseClass.click_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13072600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Verify the entered details are correct",
+            "match": {
+              "location": "AdactinusingBaseClass.verify_the_entered_details_are_correct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1221634900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Search the required hotel location and room and inDate and outDate and adult along with the Dates and click Search",
+            "match": {
+              "location": "AdactinusingBaseClass.search_the_required_hotel_location_and_room_and_inDate_and_outDate_and_adult_along_with_the_Dates_and_click_Search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Adelaide",
+                  "4 - Four",
+                  "23/06/2021",
+                  "25/06/2021",
+                  "3 - Three"
+                ]
+              },
+              {
+                "cells": [
+                  "Paris",
+                  "2 - Two",
+                  "25/06/2021",
+                  "30/06/2021",
+                  "4 - Four"
+                ]
+              },
+              {
+                "cells": [
+                  "Los Angeles",
+                  "2 - Two",
+                  "26/06/2021",
+                  "27/06/2021",
+                  "3 - Three"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 599020400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Select the Required Hotel and Continue",
+            "match": {
+              "location": "AdactinusingBaseClass.select_the_Required_Hotel_and_Continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189364200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter details fname and lname and address and cc and cvv for booking Confimration and Book",
+            "match": {
+              "location": "AdactinusingBaseClass.enter_details_fname_and_lname_and_address_and_cc_and_cvv_for_booking_Confimration_and_Book(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "fname",
+                  "lname",
+                  "address",
+                  "cc",
+                  "ccType",
+                  "eDate",
+                  "eYear",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "Drizzle",
+                  "Drew",
+                  "Chennai",
+                  "4567123445671234",
+                  "VISA",
+                  "July",
+                  "2022",
+                  "300"
+                ]
+              },
+              {
+                "cells": [
+                  "Thunder",
+                  "Roger",
+                  "Chennai",
+                  "4569789412345698",
+                  "Master Card",
+                  "June",
+                  "2022",
+                  "289"
+                ]
+              },
+              {
+                "cells": [
+                  "Pepper",
+                  "Clint",
+                  "Chennai",
+                  "6589456915987532",
+                  "American Express",
+                  "April",
+                  "2022",
+                  "199"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5520176300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Print the Order number",
+            "match": {
+              "location": "AdactinusingBaseClass.print_the_Order_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 366603000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Click Logout",
+            "match": {
+              "location": "AdactinusingBaseClass.click_Logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adactin"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User need to be in the Aadactin Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-06-28T17:48:42.581Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1694224800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.launcher()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "User needs to check the iternary",
+        "description": "",
+        "id": "book-a-ticket-using-adacting-page;user-needs-to-check-the-iternary",
+        "after": [
+          {
+            "result": {
+              "duration": 1256618900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebow(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1664184200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User launch the Adacting browser",
+            "match": {
+              "location": "AdactinusingBaseClass.user_launch_the_Adacting_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 855888000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User enter the username and password",
+            "match": {
+              "location": "AdactinusingBaseClass.user_enter_the_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "CelinaRaj88",
+                  "Diya@2015"
+                ]
+              },
+              {
+                "cells": [
+                  "DiyaReneesh",
+                  "Diya@2015"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 612029000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user clicks booked Itenary",
+            "match": {
+              "location": "AdactinusingBaseClass.the_user_clicks_booked_Itenary()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 360556500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click Logout",
+            "match": {
+              "location": "AdactinusingBaseClass.click_Logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adactin"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Book a Ticket using Adacting Page",
+    "description": "",
+    "id": "book-a-ticket-using-adacting-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AdactingUsingBaseClass.feature",
+    "tags": [
+      {
+        "name": "@Adactin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

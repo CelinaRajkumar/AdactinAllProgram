@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="71.786934">
+    <testcase classname="Book a Ticket using Adacting Page" name="User need to book a Hotel ticket in the Adacting Page" time="14.157103">
+        <system-out><![CDATA[Given Launch Adactin Browser................................................passed
+When The user enter the credntials username and password....................passed
+And click Login.............................................................passed
+Then Verify the entered details are correct.................................passed
+When Search the required hotel location and room and inDate and outDate and adult along with the Dates and click Search.passed
+And Select the Required Hotel and Continue..................................passed
+And Enter details fname and lname and address and cc and cvv for booking Confimration and Book.passed
+And Print the Order number..................................................passed
+And Click Logout............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Book a Ticket using Adacting Page" name="User needs to check the iternary" time="8.366992">
+        <system-out><![CDATA[Given User launch the Adacting browser......................................passed
+When User enter the username and password...................................passed
+When the user clicks booked Itenary.........................................passed
+And Click Logout............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User must search for a product and add to cart" name="User must launch amazon app and search for Apple watch" time="6.002927">
+        <system-out><![CDATA[Given Launch the Amazon App.................................................passed
+When Search for the Apple Watch and give a Search...........................passed
+And the user must click on Apple Watch 6....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User must search for a product and add to cart" name="User must launch amazon app and search for Apple watch 2" time="5.90659">
+        <system-out><![CDATA[Given Launch the Amazon App.................................................passed
+When Search for the Apple Watch and give a Search...........................passed
+And the user must click on Apple Watch 5....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login into Gmail account and checking sent Items" name="User login to Gmail account using valid credentials and checks sent items" time="4.182302">
+        <system-out><![CDATA[Given Login into the Gamil account..........................................passed
+When the user enters UserID and Password....................................passed
+And the user clicks Login...................................................passed
+Then to verify if the user has entered the right page.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Navigate across different courses in the Greens Application" name="To Navigate across different course" time="3.58416">
+        <system-out><![CDATA[Given User is in Green Technology Page......................................passed
+Given the user selects courses..............................................passed
+When on Selecting Courses navigates to Java Training........................passed
+And User selects J2EE training..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Navigate across different courses in the Greens Application" name="To Navigate across different course 2" time="3.534933">
+        <system-out><![CDATA[Given User is in Green Technology Page......................................passed
+Given the user selects courses..............................................passed
+When on Selecting Courses navigates to software testing Training............passed
+And User selects LoadRunner training........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Navigate across different courses in the Greens Application" name="" time="5.105567">
+        <system-out><![CDATA[Given User is in Green Technology Page......................................passed
+Given the User Click on careers.............................................passed
+And click on syllabus.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Navigate across different courses in the Greens Application" name="_2" time="6.872003">
+        <system-out><![CDATA[Given User is in Green Technology Page......................................passed
+Given the User Click on Contact Us..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To search  a product from a given site" name="To Search for a cosmetic brand in Nykaa Site" time="3.789755">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=91.0.4472.124)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QUOG6GQ', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\celin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e8f3c2456c3f4b26697a30b1a93fda3d&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)&#13;&#10;&#9;at com.basePack.BaseClass.toInput(BaseClass.java:61)&#13;&#10;&#9;at com.StepDef.AdactinusingBaseClass.userClicksOnAParticularBrand(AdactinusingBaseClass.java:400)&#13;&#10;&#9;at ✽.User clicks on a particular &quot;M.A.C&quot; brand(file:src/test/resources/Features/Nykka.feature:7)&#13;&#10;"><![CDATA[Given Launch to the Nykaa site..............................................passed
+When User navigates to Brands...............................................passed
+And User clicks on a particular "M.A.C" brand...............................failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QUOG6GQ', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\celin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e8f3c2456c3f4b26697a30b1a93fda3d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.basePack.BaseClass.toInput(BaseClass.java:61)
+	at com.StepDef.AdactinusingBaseClass.userClicksOnAParticularBrand(AdactinusingBaseClass.java:400)
+	at ✽.User clicks on a particular "M.A.C" brand(file:src/test/resources/Features/Nykka.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="To search  a product from a given site" name="To Search for a cosmetic brand in Nykaa Site 2" time="3.760533">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#brandSearchBox&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-QUOG6GQ', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\celin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d5131d38d76a5f0ffd3320318c08babb&#10;*** Element info: {Using=id, value=brandSearchBox}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)&#13;&#10;&#9;at com.basePack.BaseClass.toInput(BaseClass.java:61)&#13;&#10;&#9;at com.StepDef.AdactinusingBaseClass.userClicksOnAParticularBrand(AdactinusingBaseClass.java:400)&#13;&#10;&#9;at ✽.User clicks on a particular &quot;Lakme&quot; brand(file:src/test/resources/Features/Nykka.feature:7)&#13;&#10;"><![CDATA[Given Launch to the Nykaa site..............................................passed
+When User navigates to Brands...............................................passed
+And User clicks on a particular "Lakme" brand...............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#brandSearchBox"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QUOG6GQ', ip: '192.168.29.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\celin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5131d38d76a5f0ffd3320318c08babb
+*** Element info: {Using=id, value=brandSearchBox}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.basePack.BaseClass.toInput(BaseClass.java:61)
+	at com.StepDef.AdactinusingBaseClass.userClicksOnAParticularBrand(AdactinusingBaseClass.java:400)
+	at ✽.User clicks on a particular "Lakme" brand(file:src/test/resources/Features/Nykka.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="To search  a product from a given site" name="To Search Cotton saree in Hand Made Saree Site" time="6.524069">
+        <system-out><![CDATA[Given Launch to the Sundariihandmade site...................................passed
+When The user navigates to shop by category.................................passed
+And The user clicks Cotton Blouses..........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
